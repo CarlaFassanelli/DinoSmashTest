@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DinoSmash | Contacto</title>
+	<link rel="icon" type="image/png" href="../img/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar container">
+			<img src="../img/logo.png" alt="DinoSmash Logo" class="logo-img">
+			<a href="../index.html" class="logo"> DinoSmash</a>
+
+			<button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="nav-menu" id="navMenu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="menu.html">Menú</a></li>
+				<li><a href="horarios.html">Horarios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+
+			<button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+				🛒
+				<span class="cart-count" id="cartCount">0</span>
+			</button>
+		</nav>
+	</header>
+
+	<main>
+		<section class="products container" id="contacto">
+			<h2>Contacto</h2>
+
+            <div class="contact-form-wrap">
+				<div class="contact-form-header">
+					<h3>Haz tu consulta Dino</h3>
+					<p>Cuéntanos si es pedido, reserva o evento y te respondemos rápido.</p>
+				</div>
+
+				<form class="contact-form-modern" action="#" method="post">
+					<div class="contact-form-grid">
+						<div class="contact-field">
+							<label for="contactName">Nombre</label>
+							<input id="contactName" name="contactName" type="text" placeholder="Tu nombre" required>
+						</div>
+
+						<div class="contact-field">
+							<label for="contactPhone">WhatsApp</label>
+							<input id="contactPhone" name="contactPhone" type="tel" placeholder="2615 976367" required>
+						</div>
+
+						<div class="contact-field">
+							<label for="contactType">Tipo de consulta</label>
+							<select id="contactType" name="contactType" required>
+								<option value="" selected disabled>Selecciona una opción</option>
+								<option value="pedido">Pedido</option>
+								<option value="reserva">Reserva</option>
+								<option value="evento">Evento / Cumpleaños</option>
+							</select>
+						</div>
+
+						<div class="contact-field">
+							<label for="contactTime">Horario preferido</label>
+							<select id="contactTime" name="contactTime">
+								<option value="noche">Noche (20:00 a 00:30)</option>
+								<option value="cualquiera">Cualquier horario</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="contact-field contact-field-full">
+						<label for="contactMessage">Mensaje</label>
+						<textarea id="contactMessage" name="contactMessage" rows="4" placeholder="Ej: Quiero reservar para 8 personas el sábado a las 22:00"></textarea>
+					</div>
+
+					<div class="contact-form-actions">
+						<button type="submit" class="btn">Enviar consulta</button>
+						<a href="https://wa.me/5492615976367" class="btn secondary" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+					</div>
+				</form>
+			</div>
+	
+
+
+
+			<div class="contact-highlight">
+				<div class="contact-highlight-header">
+					<h3>Atención rápida</h3>
+					<p>Te respondemos por nuestros canales oficiales para pedidos, reservas y consultas.</p>
+				</div>
+
+				<div class="contact-highlight-grid">
+					<article class="contact-modern-card">
+						<span class="contact-chip">⏱️ Respuesta</span>
+						<h4>En menos de 10 minutos</h4>
+						<p>De lunes a domingo durante horario comercial.</p>
+					</article>
+
+					<article class="contact-modern-card">
+						<span class="contact-chip">🌐 Redes</span>
+						<h4>Síguenos para promos</h4>
+						<div class="contact-links">
+							<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+						</div>	
+					</article>
+				</div>
+			</div>
+
+			
+		</section>
+
+	
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>@ 2026 DinoSmash. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+		<div class="cart-header">
+			<h3>Tu carrito</h3>
+			<button id="closeCart" aria-label="Cerrar carrito">✕</button>
+		</div>
+
+		<div class="cart-items" id="cartItems">
+			<p class="empty-cart">Tu carrito está vacío.</p>
+		</div>
+
+		<div class="cart-summary">
+			<p>Total: <strong id="cartTotal">$0.00</strong></p>
+			<div class="checkout-form">
+				<label for="customerName">Nombre y Apellido (Obligatorio):</label>
+				<input type="text" id="customerName" placeholder="Ingresa tu nombre y apellido">
+
+				<div class="checkout-field">
+					<label for="pickupLocal">Retiro en local:</label>
+					<input type="checkbox" id="pickupLocal" checked>
+				</div>
+
+				<label for="paymentMethod">Método de pago:</label>
+				<select id="paymentMethod">
+					<option value="mercado_pago">Mercado Pago</option>
+					<option value="efectivo">Efectivo</option>
+				</select>
+
+				<div class="mp-info" id="mpInfo">
+					<p>Alias de Mercado Pago:</p>
+					<strong>Dino Smash Dino</strong>
+					<p>A nombre de: <strong>Dino Smash Dino</strong></p>
+				</div>
+			</div>
+			<button class="btn secondary" id="clearCart">Vaciar carrito</button>
+			<button class="btn" id="checkoutBtn">Finalizar compra</button>
+		</div>
+	</aside>
+
+	<div class="overlay" id="overlay"></div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

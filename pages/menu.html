@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoSmash | Menú</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <img src="../img/logo.png" alt="DinoSmash Logo" class="logo-img">
+            <a href="../index.html" class="logo"> DinoSmash</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products container" id="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="products-grid">
+                <article class="product-card" data-id="1" data-name="Smash Clásica" data-price="10000">
+                    <div class="combo-visual">
+                        <img class="combo-image-burger" src="../img/burguersimple.png" alt="Smash Clásica">
+                        <img class="combo-image-fries" src="../img/papas.png" alt="Porción de papas">
+                    </div>
+                    <h3>Burguer Smash Simple</h3>
+                    <p>Pan de papa, medallón de carne smiasheada, doble cheddar, cebolla picada, lechuga, tomate, huevo + papas</p>
+                    <div class="product-footer">
+                        <span>$10.000</span>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="2" data-name="Doble Volcán" data-price="12000">
+                    <div class="combo-visual">
+                        <img class="combo-image-burger" src="../img/burguertriplecheddar.png" alt="Doble Volcán">
+                        <img class="combo-image-fries" src="../img/papas.png" alt="Porción de papas">
+                    </div>
+                    <h3>Burguer Smash Triple Cheddar</h3>
+                    <p>Pan de papa, doble medallón de carne smasheada, triple cheddar, bacon + papas.</p>
+                    <div class="product-footer">
+                        <span>$12.000</span>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="3" data-name="Pollo Crunch" data-price="12000">
+                    <img src="../img/burguerbbq.png" alt="Burguer Smash BBQ">
+                    <h3>Burguer Smash BBQ</h3>
+                    <p>Pan de papa, doble medallón de carne smasheada, doble cheddar, cebolla caramelizada, bacon y salsa barbacoa.</p>
+                    <div class="product-footer">
+                        <span>$12.000</span>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="4" data-name="Medallón extra de carne" data-price="3000">
+                    <img src="../img/medallon.jpg" alt="   Medallón extra de carne">
+                    <h3>Medallón extra de carne</h3>
+                    <div class="product-footer">
+                        <span>$3.000</span>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </article>   
+            </div>
+        </section>
+
+        <section class="promos" id="ofertas">
+            <div class="container">
+                <h2>Ofertas Especiales</h2>
+                <div class="products-grid offers-grid">
+                    <article class="product-card offer-card" data-id="101" data-name="Combo Dino Noche" data-price="17000">
+                        <span class="offer-badge">-15%</span>
+                        <div class="combo-visual combo-visual-double">
+                            <img class="combo-image-burger combo-image-burger-first" src="../img/burguersimple.png" alt="Combo Dino Noche">
+                            <img class="combo-image-burger combo-image-burger-second" src="../img/burguersimple.png" alt="Combo Dino Noche segunda smash">
+                            <img class="combo-image-fries" src="../img/papas.png" alt="Combo Dino Noche papas">
+                        </div>
+                        <h3>Combo Dino Noche</h3>
+                        <p>2 Burguer Smash Simple + 1 porción grande de papas.</p>
+                        <div class="product-footer">
+                            <span>$17.000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card offer-card" data-id="102" data-name="Jueves Smash 2x1" data-price="12000">
+                        <span class="offer-badge">2x1</span>
+                        <img src="../img/burguerbbq.png" alt="Jueves Smash 2x1">
+                        <h3>Jueves Smash</h3>
+                        <p>Comprá una Burguer Smash BBQ y la segunda va por la casa.</p>
+                        <div class="product-footer">
+                            <span>$12.000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card offer-card" data-id="103" data-name="After Dino Medallón Extra" data-price="2000">
+                        <span class="offer-badge">Promo</span>
+                        <img src="../img/medallon.jpg" alt="After Dino Medallón Extra">
+                        <h3>After Dino</h3>
+                        <p>Desde las 23:00 hs, agregá medallón extra por solo $2.000.</p>
+                        <div class="product-footer">
+                            <span>$2.000</span>
+                            <button class="add-to-cart">Agregar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>@ 2026 DinoSmash. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Tu carrito</h3>
+            <button id="closeCart" aria-label="Cerrar carrito">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Tu carrito está vacío.</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total: <strong id="cartTotal">$0.00</strong></p>
+            <div class="checkout-form">
+                <label for="customerName">Nombre y Apellido (Obligatorio):</label>
+                <input type="text" id="customerName" placeholder="Ingresa tu nombre y apellido">
+
+                <div class="checkout-field">
+                    <label for="pickupLocal">Retiro en local:</label>
+                    <input type="checkbox" id="pickupLocal" checked>
+                </div>
+
+                <label for="paymentMethod">Método de pago:</label>
+                <select id="paymentMethod">
+                    <option value="mercado_pago">Mercado Pago</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+
+                <div class="mp-info" id="mpInfo">
+                    <p>Alias de Mercado Pago:</p>
+                    <strong>Dino Smash </strong>
+                    <p>A nombre de: <strong>Dino</strong></p>
+                </div>
+            </div>
+            <button class="btn secondary" id="clearCart">Vaciar carrito</button>
+            <button class="btn" id="checkoutBtn">Finalizar compra</button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

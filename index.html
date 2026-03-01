@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoSmash | Inicio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <img src="img/logo.png" alt="DinoSmash Logo" class="logo-img">
+            <a href="index.html" class="logo"> DinoSmash</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/menu.html">Menú</a></li>
+                <li><a href="pages/horarios.html">Horarios</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+
+            <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel" id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-static">
+                        <div class="carousel-slide-text">
+                            <p class="tag">Sabor que ruge</p>
+                            <h2 class="carousel-title">Las hamburguesas más brutales</h2>
+                            <p class="carousel-description">Ingredientes premium, pan artesanal y combinaciones irresistibles. Pide fácil y rápido desde tu carrito.</p>
+                            <a href="pages/menu.html" class="carousel-reserve-btn">Ver menú</a>
+                        </div>
+
+                        <div class="carousel-images-window">
+                            <div class="carousel-track">
+                                <div class="carousel-image-slide">
+                                    <img src="img/burguersimple.png" alt="Hamburguesa clásica DinoSmash">
+                                </div>
+                                <div class="carousel-image-slide">
+                                    <img src="img/burguertriplecheddar.png" alt="Hamburguesa triple cheddar">
+                                </div>
+                                <div class="carousel-image-slide">
+                                    <img src="img/burguerbbq.png" alt="Hamburguesa bbq">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+        <section class="how-order">
+            <div class="container">
+                <h2>Cómo pedir</h2>
+
+                <div class="order-steps">
+                    <div class="step">
+                        <span>1</span>
+                        <h3>Elegí tu burger</h3>
+                        <p>Mirá nuestro menú y seleccioná tu favorita.</p>
+                    </div>
+
+                    <div class="step">
+                        <span>2</span>
+                        <h3>Agregá al carrito</h3>
+                        <p>Sumá tus productos fácilmente.</p>
+                    </div>
+
+                    <div class="step">
+                        <span>3</span>
+                        <h3>Finalizá tu pedido</h3>
+                        <p>Confirmá tu compra y disfrutá.</p>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section class="location">
+            <div class="container">
+                <h2>Dónde estamos</h2>
+                <p>📍 DINO market, Quintana 113, Mendoza</p>
+
+                <iframe 
+                src="https://maps.google.com/maps?q=DINO%20market,%20Quintana%20113,%20Mendoza&output=embed"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+
+                <a class="location-map-link" href="https://maps.app.goo.gl/JrSjMfATCHVYxD9s6?g_st=iw" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <p>@ 2026 DinoSmash. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Tu carrito</h3>
+            <button id="closeCart" aria-label="Cerrar carrito">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Tu carrito está vacío.</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total: <strong id="cartTotal">$0.00</strong></p>
+            <div class="checkout-form">
+                <label for="customerName">Nombre y Apellido (Obligatorio):</label>
+                <input type="text" id="customerName" placeholder="Ingresa tu nombre y apellido">
+
+                <div class="checkout-field">
+                    <label for="pickupLocal">Retiro en local:</label>
+                    <input type="checkbox" id="pickupLocal" checked>
+                </div>
+
+                <label for="paymentMethod">Método de pago:</label>
+                <select id="paymentMethod">
+                    <option value="mercado_pago">Mercado Pago</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+
+                <div class="mp-info" id="mpInfo">
+                    <p>Alias de Mercado Pago:</p>
+                    <strong>Dino Smash Dino</strong>
+                    <p>A nombre de: <strong>Dino Smash Dino</strong></p>
+                </div>
+            </div>
+            <button class="btn secondary" id="clearCart">Vaciar carrito</button>
+            <button class="btn" id="checkoutBtn">Finalizar compra</button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

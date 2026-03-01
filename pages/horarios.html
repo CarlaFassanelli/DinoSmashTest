@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DinoSmash | Horarios</title>
+	<link rel="icon" type="image/png" href="../img/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar container">
+			<img src="../img/logo.png" alt="DinoSmash Logo" class="logo-img">
+			<a href="../index.html" class="logo"> DinoSmash</a>
+
+			<button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="nav-menu" id="navMenu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="menu.html">Menú</a></li>
+				<li><a href="horarios.html">Horarios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+
+			<button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+				🛒
+				<span class="cart-count" id="cartCount">0</span>
+			</button>
+		</nav>
+	</header>
+
+<section class="products container schedule-section" id="horarios">
+	<h2>Horarios de atención</h2>
+	<p class="hero-text">Te dejamos más detalles para que sepas exactamente cuándo pedir o pasar a buscar tu combo.</p>
+
+	<div class="schedule-cards">
+		<article class="schedule-card">
+			<h3>Jueves</h3>
+			<p>20:00 hs – 00:30 hs</p>
+			<span class="schedule-pill">Nocturno</span>
+		</article>
+
+		<article class="schedule-card">
+			<h3>Viernes</h3>
+			<p>20:00 hs – 00:30 hs</p>
+			<span class="schedule-pill">Nocturno</span>
+		</article>
+
+		<article class="schedule-card">
+			<h3>Sábado</h3>
+			<p>20:00 hs – 00:30 hs</p>
+			<span class="schedule-pill">Nocturno</span>
+		</article>
+
+		<article class="schedule-card">
+			<h3>Domingo</h3>
+			<p>20:00 hs – 00:30 hs</p>
+			<span class="schedule-pill">Nocturno</span>
+		</article>
+	</div>
+
+	<div class="schedule-extra">
+		<p>🎉 Reservas grupales y eventos: coordinación previa por WhatsApp.</p>
+		<a class="btn" href="https://wa.me/5492615976367?text=Hola%20DinoSmash%2C%20quiero%20consultar%20por%20reservas%20y%20horarios." target="_blank" rel="noopener noreferrer">Pedidos y consultas</a>
+	</div>
+
+	<div class="schedule-note">
+		<p>⏱️ Los tiempos de preparación pueden variar según la cantidad de pedidos.</p>
+	</div>
+</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p>@ 2026 DinoSmash. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+		<div class="cart-header">
+			<h3>Tu carrito</h3>
+			<button id="closeCart" aria-label="Cerrar carrito">✕</button>
+		</div>
+
+		<div class="cart-items" id="cartItems">
+			<p class="empty-cart">Tu carrito está vacío.</p>
+		</div>
+
+		<div class="cart-summary">
+			<p>Total: <strong id="cartTotal">$0.00</strong></p>
+			<div class="checkout-form">
+				<label for="customerName">Nombre y Apellido (Obligatorio):</label>
+				<input type="text" id="customerName" placeholder="Ingresa tu nombre y apellido">
+
+				<div class="checkout-field">
+					<label for="pickupLocal">Retiro en local:</label>
+					<input type="checkbox" id="pickupLocal" checked>
+				</div>
+
+				<label for="paymentMethod">Método de pago:</label>
+				<select id="paymentMethod">
+					<option value="mercado_pago">Mercado Pago</option>
+					<option value="efectivo">Efectivo</option>
+				</select>
+
+				<div class="mp-info" id="mpInfo">
+					<p>Alias de Mercado Pago:</p>
+					<strong>Dino Smash Dino</strong>
+					<p>A nombre de: <strong>Dino Smash Dino</strong></p>
+				</div>
+			</div>
+			<button class="btn secondary" id="clearCart">Vaciar carrito</button>
+			<button class="btn" id="checkoutBtn">Finalizar compra</button>
+		</div>
+	</aside>
+
+	<div class="overlay" id="overlay"></div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
